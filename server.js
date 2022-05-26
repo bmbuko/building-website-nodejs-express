@@ -12,7 +12,7 @@ const speakersService = new SpeakerService('./data/speakers.json');
 const app = express();
 const routes = require('./routes');
 
-const port = 3000;
+
 
 app.set('trust proxy', 1);
 app.use(
@@ -47,7 +47,7 @@ app.use(
     speakersService,
   })
 );
-
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`express server listening on port ${port}!`);
 });
