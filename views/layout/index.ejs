@@ -19,14 +19,17 @@
       rel="stylesheet"
     />
     <script>
+    
       window.dataLayer = window.dataLayer || [];
-      
-      dataLayer.push({
+      var pageTitle = document.title
+      var url = window.location.href
+      dataLayer.push ({
        'event': 'Pageview',
-       'pageURL': 'https://roux-meet.herokuapp.com/',
-       'pageTitle': 'welcome',
+       'pageURL': 'url',
+       'title': 'pageTitle',
        'visitorType': 'customer'
       });
+      
       </script>
 
     <!-- Google Tag Manager -->
